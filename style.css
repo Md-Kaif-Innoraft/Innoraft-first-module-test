@@ -1,22 +1,22 @@
 /*   import Fonts  */
 @font-face {
     font-family: "harpGrotesk-Medium";
-    src: url("parallel/SharpGrotesk-Medium.woff");
+    src: url("fonts/SharpGrotesk-Medium.woff");
 }
 
 @font-face {
     font-family: "workSans-Regular";
-    src: url("parallel/WorkSans-Regular.woff");
+    src: url("fonts/WorkSans-Regular.woff");
 }
 
 @font-face {
     font-family: "WorkSans-Medium";
-    src: url("parallel/WorkSans-Medium.woff");
+    src: url("fonts/WorkSans-Medium.woff");
 }
 
 @font-face {
     font-family: "WorkSans-SemiBold";
-    src: url("parallel/WorkSans-SemiBold.woff");
+    src: url("fonts/WorkSans-SemiBold.woff");
 }
 
 /* Reset default Styles */
@@ -97,7 +97,7 @@ nav ul li a {
     padding: 16px;
 }
 
-.navbar-right{
+.navbar-right {
     gap: 0;
 }
 
@@ -167,7 +167,7 @@ nav ul li a {
 
 }
 
-.banner-logo-primary{
+.banner-logo-primary {
     padding-top: 30px;
 }
 
