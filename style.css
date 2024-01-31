@@ -1,7 +1,7 @@
-/*   import Fonts */
+/*   import Fonts  */
 @font-face {
     font-family: "harpGrotesk-Medium";
-    src: url("/parallel/SharpGrotesk-Medium.woff");
+    src: url("parallel/SharpGrotesk-Medium.woff");
 }
 
 @font-face {
@@ -27,7 +27,7 @@
     box-sizing: border-box;
 }
 
-/*  Defining color to use */
+/*  Defining color variables to use */
 
 :root {
     --Black: #000000 --Grey: #D2D2D2;
@@ -49,9 +49,13 @@
 .flex {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
 }
 
 /* Primary heading  */
+
 .primary-heading {
     font-size: 2rem;
     font-family: "harpGrotesk-Medium";
@@ -60,7 +64,7 @@
 /* Secondary Heading */
 
 .secondary-heading {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     font-family: "harpGrotesk-Medium";
 }
 
@@ -68,14 +72,9 @@
 /* Header Starts Here */
 
 .navbar {
-    align-items: center;
-    padding: 12px 0;
+    padding: 16px 0;
 }
 
-.navbar-left {
-    align-items: center;
-    gap: 20px;
-}
 
 nav ul li {
     list-style: none;
@@ -84,24 +83,25 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     font-family: "WorkSans-Medium";
+    font-size: 1.1rem;
     color: var(--Black);
-    padding: 20px;
+    padding: 16px;
 }
 
-.navbar-right {
-    align-items: center;
+.navbar-right{
+    gap: 0;
 }
 
 .navbar-right ul li {
     border-right: 2px solid var(--Dark-grey);
-    padding-right: 20px;
+    padding-right: 32px;
 }
 
 .primary-button {
-    padding: 12px 36px;
+    padding: 14px 36px;
     border-radius: 8px;
-    /* font-family: "workSans-Regular"; */
     font-family: "WorkSans-Medium";
+    font-size: 1.1rem;
 }
 
 .navbar-btn-left {
@@ -125,14 +125,16 @@ nav ul li a {
 
 .banner-nav {
     justify-content: center;
-    gap: 20px;
-    padding: 48px;
+    padding: 60px 0;
+    gap: 15px;
 }
 
 .banner-nav li a {
-    padding: 8px 16px;
+    padding: 6px 12px;
     border-radius: 25px;
     border: 1px solid var(--Dark-grey);
+    font-size: 1rem;
+
 }
 
 .banner-nav li a:hover {
@@ -150,37 +152,39 @@ nav ul li a {
 .banner-content-right-textbox {
     width: 444px;
     position: absolute;
-    top: 84px;
-    right: 42px;
-    line-height: 1.3;
+    top: 110px;
+    right: 41px;
+    line-height: 1.5;
 }
 
 .banner-content-mid-image {
     position: absolute;
-    top: 0;
+    top: 44px;
     right: 452px;
     z-index: -1;
 
 }
 
+.banner-logo-primary{
+    padding-top: 30px;
+}
+
 .sign-up-box {
     position: absolute;
     top: 341px;
-    right: 90px;
+    right: 32px;
 }
 
 .sign-up-box input {
-    padding: 12px 20px;
+    padding: 18px 20px;
     margin: 20px 0;
     border-radius: 8px;
     border: 1px solid black;
-    width: 300px;
+    width: 360px;
 }
 
 #email::placeholder {
     font-family: "workSans-Regular";
 }
-
-
 
 /* Banner section Ends here */
