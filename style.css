@@ -68,6 +68,15 @@
     font-family: "harpGrotesk-Medium";
 }
 
+/* Primary button  */
+
+.primary-button {
+    padding: 14px 36px;
+    border-radius: 8px;
+    font-family: "WorkSans-Medium";
+    font-size: 1.1rem;
+}
+
 
 /* Header Starts Here */
 
@@ -95,13 +104,6 @@ nav ul li a {
 .navbar-right ul li {
     border-right: 2px solid var(--Dark-grey);
     padding-right: 32px;
-}
-
-.primary-button {
-    padding: 14px 36px;
-    border-radius: 8px;
-    font-family: "WorkSans-Medium";
-    font-size: 1.1rem;
 }
 
 .navbar-btn-left {
@@ -185,6 +187,7 @@ nav ul li a {
 
 #email::placeholder {
     font-family: "workSans-Regular";
+    font-size: 1.2rem;
 }
 
 /* Banner section Ends here */
