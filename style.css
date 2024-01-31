@@ -1,4 +1,4 @@
-/*  Font import */
+/*   import Fonts */
 @font-face {
     font-family: "harpGrotesk-Medium";
     src: url("/parallel/SharpGrotesk-Medium.woff");
@@ -19,7 +19,7 @@
     src: url("parallel/WorkSans-SemiBold.woff");
 }
 
-/* Reset Style */
+/* Reset default Styles */
 
 * {
     margin: 0;
@@ -44,21 +44,24 @@
     margin: 0 auto;
 }
 
+/* Flex class for display flex */
+
 .flex {
     display: flex;
     justify-content: space-between;
 }
 
-.primary-heading{
-    font-family: "WorkSans-SemiBold";
-    font-size: 2.4rem;
-    /* font-family: "WorkSans-Medium"; */
-     /* font-family: "harpGrotesk-Medium"; */
+/* Primary heading  */
+.primary-heading {
+    font-size: 2rem;
+    font-family: "harpGrotesk-Medium";
 }
 
-.secondary-heading{
-    font-family: "WorkSans-SemiBold";
-    font-size: 1.5rem;
+/* Secondary Heading */
+
+.secondary-heading {
+    font-size: 1.3rem;
+    font-family: "harpGrotesk-Medium";
 }
 
 
@@ -80,7 +83,6 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    /* font-family: "workSans-Regular"; */
     font-family: "WorkSans-Medium";
     color: var(--Black);
     padding: 20px;
@@ -142,15 +144,15 @@ nav ul li a {
 .banner-content {
     position: relative;
     z-index: 1;
+    padding-bottom: 100px;
 }
 
 .banner-content-right-textbox {
-    /* font-family: "harpGrotesk-Medium"; */
-    /* font-family: "WorkSans-Medium"; */  
-    width: 400px;
+    width: 444px;
     position: absolute;
-    top: 71px;
-    right: 82px;
+    top: 84px;
+    right: 42px;
+    line-height: 1.3;
 }
 
 .banner-content-mid-image {
@@ -161,16 +163,22 @@ nav ul li a {
 
 }
 
-.sign-up-box{
+.sign-up-box {
     position: absolute;
-    top: 348px;
-    right: 162px;
+    top: 341px;
+    right: 90px;
 }
-.sign-up-box input{
-    padding: 10px  40px 10px 20px;
-    margin: 16px 0;
+
+.sign-up-box input {
+    padding: 12px 20px;
+    margin: 20px 0;
     border-radius: 8px;
     border: 1px solid black;
+    width: 300px;
+}
+
+#email::placeholder {
+    font-family: "workSans-Regular";
 }
 
 
