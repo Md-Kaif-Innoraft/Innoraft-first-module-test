@@ -1,0 +1,178 @@
+/*  Font import */
+@font-face {
+    font-family: "harpGrotesk-Medium";
+    src: url("/parallel/SharpGrotesk-Medium.woff");
+}
+
+@font-face {
+    font-family: "workSans-Regular";
+    src: url("parallel/WorkSans-Regular.woff");
+}
+
+@font-face {
+    font-family: "WorkSans-Medium";
+    src: url("parallel/WorkSans-Medium.woff");
+}
+
+@font-face {
+    font-family: "WorkSans-SemiBold";
+    src: url("parallel/WorkSans-SemiBold.woff");
+}
+
+/* Reset Style */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*  Defining color to use */
+
+:root {
+    --Black: #000000 --Grey: #D2D2D2;
+    --White: #ffffff;
+    --Yellow: #FFD560;
+    --Dark-grey: #979797;
+    --Cream: #FFF7F1;
+}
+
+/* Container wrapper for the alignment */
+
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.primary-heading{
+    font-family: "WorkSans-SemiBold";
+    font-size: 2.4rem;
+    /* font-family: "WorkSans-Medium"; */
+     /* font-family: "harpGrotesk-Medium"; */
+}
+
+.secondary-heading{
+    font-family: "WorkSans-SemiBold";
+    font-size: 1.5rem;
+}
+
+
+/* Header Starts Here */
+
+.navbar {
+    align-items: center;
+    padding: 12px 0;
+}
+
+.navbar-left {
+    align-items: center;
+    gap: 20px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    /* font-family: "workSans-Regular"; */
+    font-family: "WorkSans-Medium";
+    color: var(--Black);
+    padding: 20px;
+}
+
+.navbar-right {
+    align-items: center;
+}
+
+.navbar-right ul li {
+    border-right: 2px solid var(--Dark-grey);
+    padding-right: 20px;
+}
+
+.primary-button {
+    padding: 12px 36px;
+    border-radius: 8px;
+    /* font-family: "workSans-Regular"; */
+    font-family: "WorkSans-Medium";
+}
+
+.navbar-btn-left {
+    border: none;
+    background: transparent;
+}
+
+.btn {
+    border: 1.5px solid black;
+    background: var(--Yellow);
+}
+
+/* Header Ends Here */
+
+
+/* Banner section starts here */
+
+#banner {
+    background: var(--Cream);
+}
+
+.banner-nav {
+    justify-content: center;
+    gap: 20px;
+    padding: 48px;
+}
+
+.banner-nav li a {
+    padding: 8px 16px;
+    border-radius: 25px;
+    border: 1px solid var(--Dark-grey);
+}
+
+.banner-nav li a:hover {
+    color: var(--Black);
+    border: 1px solid black;
+    background: var(--Yellow);
+}
+
+.banner-content {
+    position: relative;
+    z-index: 1;
+}
+
+.banner-content-right-textbox {
+    /* font-family: "harpGrotesk-Medium"; */
+    /* font-family: "WorkSans-Medium"; */  
+    width: 400px;
+    position: absolute;
+    top: 71px;
+    right: 82px;
+}
+
+.banner-content-mid-image {
+    position: absolute;
+    top: 0;
+    right: 452px;
+    z-index: -1;
+
+}
+
+.sign-up-box{
+    position: absolute;
+    top: 348px;
+    right: 162px;
+}
+.sign-up-box input{
+    padding: 10px  40px 10px 20px;
+    margin: 16px 0;
+    border-radius: 8px;
+    border: 1px solid black;
+}
+
+
+
+/* Banner section Ends here */
